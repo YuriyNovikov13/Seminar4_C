@@ -8,5 +8,15 @@ Console.Write("Ввидите число А: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ввидите число B: ");
 int b = Convert.ToInt32(Console.ReadLine());
-int result = Convert.ToInt32(Math.Pow (a, b)); 
-Console.Write($"Число {a} в степени {b} -> {result}");
+int Exponentiation(int number1, int number2)
+{
+    int exp = number1;
+    for (int num = 2; num <= number2; num++)
+    {
+        exp = exp * number1;
+    }
+    return exp;
+}
+int result = Exponentiation(a, b);
+Console.WriteLine($"Число {a} в степени {b}, равно {result}");
+
