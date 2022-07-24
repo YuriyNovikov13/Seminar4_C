@@ -20,7 +20,7 @@ int[] FillArrey(int num)
      for (int position = 1; position < count; position++)
      { 
         Console.Write(", ");
-        Console.Write($"массив {col[position]}");
+        Console.Write($"{col[position]}");
       
       }
      Console.Write("]");
