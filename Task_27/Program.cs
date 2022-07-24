@@ -16,5 +16,5 @@ int Sum(int number)
     }
     return sum;
 }
-int result = Number(num);
+int result = Sum(num);
 Console.Write($"сумма цифр числа {num}, равна {result}");
